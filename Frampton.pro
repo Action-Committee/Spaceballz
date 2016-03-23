@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = spaceballz
+TARGET = framptoncomesalive
 VERSION = 0.4.2.2
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE USE_IPV6
