@@ -2357,7 +2357,7 @@ Value submitblock(const Array& params, bool fHelp)
     if (!block.SignBlock(*pwalletMain))
         throw JSONRPCError(-100, "Unable to sign block, wallet locked?");
 
-    bool fAccepted = CheckWork(&block, *pwalletMain, *pMiningKey);
+    bool fAccepted = ProcessBlock(NULL, &block);
     if (!fAccepted)
         return "rejected"; // TODO: report validation state
 
